@@ -21,7 +21,7 @@ public class NewCustomerActivity extends AppCompatActivity {
     SQLiteDatabase sqLiteDatabaseObj;
     EditText editTextName, editTextPhoneNumber, editTextAddress
             , editTextServiceType, editTextMonthlyCharge, editTextBox, editTextCost, editTextStartDate
-            , editTextMAC, editTextContractDays, editTextExpiredDate, editTextMessage
+            , editTextMAC, editTextContractDays, editTextExpiredDate, editTextMessageHolder
             ;
     String strNameHolder, strNumberHolder, SQLiteDataBaseQueryHolder
             , strAddressHolder,strServiceTypeHolder, strServiceHolder
@@ -39,9 +39,19 @@ public class NewCustomerActivity extends AppCompatActivity {
 
         EnterData = (FloatingActionButton) findViewById(R.id.button);
         ButtonDisplayData = (FloatingActionButton) findViewById(R.id.button2);
-        editTextName = (EditText)findViewById(R.id.editTextNewName1);
-        editTextPhoneNumber = (EditText)findViewById(R.id.editTextNewPhone2);
-        editTextAddress = (EditText)findViewById(R.id.editTextNewAddress3);
+
+        editTextName = (EditText)findViewById(R.id.editText1_NewName);
+        editTextPhoneNumber = (EditText)findViewById(R.id.editText2_NewPhone);
+        editTextAddress = (EditText)findViewById(R.id.editText3_NewAddress);
+        editTextServiceType = (EditText)findViewById(R.id.editText4_NewServiceType);
+        editTextBox= (EditText)findViewById(R.id.editText7_NewBox);
+        editTextCost= (EditText)findViewById(R.id.editText8_NewCost);
+        editTextStartDate= (EditText)findViewById(R.id.editText9_NewStartDate);
+        editTextMAC= (EditText)findViewById(R.id.editText10_NewMACAddress);
+        editTextContractDays= (EditText)findViewById(R.id.editText12_NewContractDay);
+        editTextExpiredDate= (EditText)findViewById(R.id.editText11_NewExpiredDate);
+        editTextMessageHolder = (EditText)findViewById(R.id.editTextNewMessage13);
+        editTextMonthlyCharge = (EditText)findViewById(R.id.editTextNew6_MonthlyCharge);
 
         EnterData.setOnClickListener(new View.OnClickListener() {
 
@@ -106,6 +116,25 @@ public class NewCustomerActivity extends AppCompatActivity {
         strNameHolder = editTextName.getText().toString() ;
         strNumberHolder = editTextPhoneNumber.getText().toString();
         strAddressHolder = editTextAddress.getText().toString();
+        strServiceTypeHolder=editTextServiceType.getText().toString(); 
+      //  strServiceHolder=editTextService.getText().toString();
+        strMonthlyChargeHolder=editTextMonthlyCharge.getText().toString();
+        strBoxHolder=editTextBox.getText().toString();
+        strCostholder=editTextCost.getText().toString();
+        strStartDateHolder=editTextStartDate.getText().toString();
+        strMACHolder=editTextMAC.getText().toString();
+        strExpiredDateHolder=editTextExpiredDate.getText().toString();
+        strContractDaysHolder=editTextContractDays.getText().toString();
+        strMessageHolder=editTextMessageHolder.getText().toString();
+        radioGroupService = (RadioGroup) findViewById(R.id.radioGroupNewService5);
+        int intChecked =  radioGroupService.getCheckedRadioButtonId();
+        switch (intChecked){
+            case R.id.radioButtonBuy:
+                strServiceHolder = "Buy"; break;
+            case R.id.radioButtonRent:
+                strServiceHolder = "Rent"; break;
+        }
+                ;
 
         if(TextUtils.isEmpty(strNameHolder) || TextUtils.isEmpty(strNumberHolder)){
 
@@ -161,7 +190,6 @@ public class NewCustomerActivity extends AppCompatActivity {
             Toast.makeText(NewCustomerActivity.this,"Please Fill All The Required Fields.", Toast.LENGTH_LONG).show();
 
         }
-
     }
 
     public void EmptyEditTextAfterDataInsert(){
@@ -176,9 +204,8 @@ public class NewCustomerActivity extends AppCompatActivity {
         editTextMAC.getText().clear();
         editTextContractDays.getText().clear();
         editTextExpiredDate.getText().clear();
-        editTextMessage.getText().clear();
-
-
+        editTextAddress.getText().clear();
+        editTextMessageHolder.getText().clear();
     }
 
 }

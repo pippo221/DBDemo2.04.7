@@ -19,7 +19,7 @@
         android:layout_alignParentStart="true"
         android:id="@+id/textView1"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Name = "
@@ -31,7 +31,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView2"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Phone Number  = "
@@ -43,7 +43,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView3"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:text="Adress = "
         android:layout_width="wrap_content"
@@ -54,7 +54,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView4"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Service Type = "
@@ -66,7 +66,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView5"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:text="Service = "
         android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView6"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Monthly Charge = "
@@ -89,7 +89,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView7"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:text="Box = "
         android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView8"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Cost = "
@@ -112,7 +112,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView9"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:text="Start Date = "
         android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView10"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="MAC Address = "
@@ -135,7 +135,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView11"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:text="Expired Date = "
         android:layout_width="wrap_content"
@@ -146,7 +146,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView12"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Contract Days = "
@@ -158,7 +158,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView13"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
     <TextView
         android:text="Message = "
         android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
         android:layout_marginTop="0dp"
         android:id="@+id/textView14"
         android:textColor="#000000"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
     <TextView
         android:text="Id Show Here"
@@ -177,7 +177,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1_ID"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView3"
         android:layout_toEndOf="@+id/textView3" />
@@ -188,7 +188,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView2_Name"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_above="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
         android:layout_toEndOf="@+id/textView3" />
@@ -199,16 +199,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView3_Address"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView3"
         android:layout_toEndOf="@+id/textView3" />
     <TextView
-        android:text="ServiceType Show Here"
+        android:text="S.Type Show Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView5_ServiceType"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView3_Address"
         android:layout_alignStart="@+id/textView3_Address" />
 
@@ -218,7 +218,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView6_Service"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView5_ServiceType"
         android:layout_alignStart="@+id/textView5_ServiceType" />
     />
@@ -228,7 +228,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView7_MonthlyCharge"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView6_Service"
         android:layout_alignStart="@+id/textView6_Service"
 
@@ -239,7 +239,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView8_Box"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView7_MonthlyCharge"
         android:layout_alignStart="@+id/textView7_MonthlyCharge"
 
@@ -250,7 +250,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView9_Cost"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView8_Box"
         android:layout_alignStart="@+id/textView8_Box"
 
@@ -261,7 +261,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView10_StartedDate"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView9_Cost"
         android:layout_alignStart="@+id/textView9_Cost"
 
@@ -272,7 +272,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView11_MAC"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView10_StartedDate"
         android:layout_alignStart="@+id/textView10_StartedDate"
 
@@ -283,7 +283,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView12_ExpiredDate"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView11_MAC"
         android:layout_alignStart="@+id/textView11_MAC"
 
@@ -294,7 +294,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView13_ContractDays"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView12_ExpiredDate"
         android:layout_alignStart="@+id/textView12_ExpiredDate"
 
@@ -305,29 +305,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView14_Message"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_below="@+id/textView13_ContractDays"
         android:layout_alignStart="@+id/textView13_ContractDays"
 
         />
-    <TextView
-        android:text="Name Show Here"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewName"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:layout_above="@+id/textView3"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
 
     <TextView
         android:text="Phone Number Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewPhoneNumber"
+        android:id="@+id/textView3_PhoneNumber"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
@@ -343,7 +333,7 @@
         android:layout_marginBottom="16dp" />
 
     <Button
-        android:text="Click Here to Delete This Record"
+        android:text="Click Here to Lock/Unlock This Record"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonDelete"

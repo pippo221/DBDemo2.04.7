@@ -46,7 +46,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:id="@+id/editTextNewName1"
+            android:id="@+id/editText1_NewName"
             tools:layout_constraintBottom_creator="1"
             android:layout_marginStart="5dp"
             tools:layout_constraintLeft_creator="1"
@@ -60,16 +60,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewPhone2"
+            android:id="@+id/editText2_NewPhone"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewName1"
+            android:layout_below="@+id/editText1_NewName"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewName1"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewName1"
+            app:layout_constraintRight_toRightOf="@+id/editText1_NewName"
+            app:layout_constraintTop_toBottomOf="@+id/editText1_NewName"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewName1" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText1_NewName" />
         <EditText
             android:hint=" Address"
             android:textSize="20dp"
@@ -77,16 +77,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewAddress3"
+            android:id="@+id/editText3_NewAddress"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewPhone2"
+            android:layout_below="@+id/editText2_NewPhone"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewPhone2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewPhone2"
+            app:layout_constraintRight_toRightOf="@+id/editText2_NewPhone"
+            app:layout_constraintTop_toBottomOf="@+id/editText2_NewPhone"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewPhone2" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText2_NewPhone" />
         <EditText
             android:hint=" Service Type"
             android:textSize="20dp"
@@ -94,16 +94,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewServiceType4"
+            android:id="@+id/editText4_NewServiceType"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewAddress3"
+            android:layout_below="@+id/editText3_NewAddress"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewAddress3"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewAddress3"
+            app:layout_constraintRight_toRightOf="@+id/editText3_NewAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editText3_NewAddress"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewAddress3" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText3_NewAddress" />
         <!--<EditText-->
             <!--android:hint="Rent/Buy"-->
             <!--android:textSize="20dp"-->
@@ -129,14 +129,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
 
-            android:layout_below="@+id/editTextNewServiceType4"
+            android:layout_below="@+id/editText4_NewServiceType"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewServiceType4"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewServiceType4"
+            app:layout_constraintRight_toRightOf="@+id/editText4_NewServiceType"
+            app:layout_constraintTop_toBottomOf="@+id/editText4_NewServiceType"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewServiceType4">
+            app:layout_constraintLeft_toLeftOf="@+id/editText4_NewServiceType">
         <RadioButton
             android:id="@+id/radioButtonRent"
             android:textSize="20dp"
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewMonthlyCharge6"
+            android:id="@+id/editTextNew6_MonthlyCharge"
             android:gravity="center"
             android:layout_below="@+id/radioGroupNewService5"
             android:layout_alignParentStart="true"
@@ -174,16 +174,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewBox7"
+            android:id="@+id/editText7_NewBox"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewMonthlyCharge6"
+            android:layout_below="@+id/editTextNew6_MonthlyCharge"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewMonthlyCharge6"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewMonthlyCharge6"
+            app:layout_constraintRight_toRightOf="@+id/editTextNew6_MonthlyCharge"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNew6_MonthlyCharge"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewMonthlyCharge6" />
+            app:layout_constraintLeft_toLeftOf="@+id/editTextNew6_MonthlyCharge" />
         <EditText
             android:hint=" Cost"
             android:textSize="20dp"
@@ -191,33 +191,33 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewCost8"
+            android:id="@+id/editText8_NewCost"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewBox7"
+            android:layout_below="@+id/editText7_NewBox"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewBox7"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewBox7"
+            app:layout_constraintRight_toRightOf="@+id/editText7_NewBox"
+            app:layout_constraintTop_toBottomOf="@+id/editText7_NewBox"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewBox7" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText7_NewBox" />
         <EditText
             android:hint=" Start Date"
             android:textSize="20dp"
-            android:id="@+id/editTextNewStartDate9"
+            android:id="@+id/editText9_NewStartDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewCost8"
+            android:layout_below="@+id/editText8_NewCost"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewCost8"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewCost8"
+            app:layout_constraintRight_toRightOf="@+id/editText8_NewCost"
+            app:layout_constraintTop_toBottomOf="@+id/editText8_NewCost"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewCost8" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText8_NewCost" />
         <EditText
             android:hint=" MAC Address"
             android:textSize="20dp"
@@ -225,16 +225,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewMACAddress10"
+            android:id="@+id/editText10_NewMACAddress"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewStartDate9"
+            android:layout_below="@+id/editText9_NewStartDate"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewStartDate9"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewStartDate9"
+            app:layout_constraintRight_toRightOf="@+id/editText9_NewStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/editText9_NewStartDate"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewStartDate9" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText9_NewStartDate" />
         <EditText
             android:hint=" Expired Date"
             android:textSize="20dp"
@@ -242,16 +242,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewExpiredDate11"
+            android:id="@+id/editText11_NewExpiredDate"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewMACAddress10"
+            android:layout_below="@+id/editText10_NewMACAddress"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewMACAddress10"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewMACAddress10"
+            app:layout_constraintRight_toRightOf="@+id/editText10_NewMACAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editText10_NewMACAddress"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewMACAddress10" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText10_NewMACAddress" />
         <EditText
             android:hint=" Contract Day"
             android:textSize="20dp"
@@ -259,16 +259,16 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewContractDay12"
+            android:id="@+id/editText12_NewContractDay"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewExpiredDate11"
+            android:layout_below="@+id/editText11_NewExpiredDate"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewExpiredDate11"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewExpiredDate11"
+            app:layout_constraintRight_toRightOf="@+id/editText11_NewExpiredDate"
+            app:layout_constraintTop_toBottomOf="@+id/editText11_NewExpiredDate"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewExpiredDate11" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText11_NewExpiredDate" />
         <EditText
             android:hint=" Message"
             android:textSize="20dp"
@@ -278,14 +278,14 @@
             android:ems="10"
             android:id="@+id/editTextNewMessage13"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewContractDay12"
+            android:layout_below="@+id/editText12_NewContractDay"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewContractDay12"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewContractDay12"
+            app:layout_constraintRight_toRightOf="@+id/editText12_NewContractDay"
+            app:layout_constraintTop_toBottomOf="@+id/editText12_NewContractDay"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewContractDay12" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText12_NewContractDay" />
 
     <!--<EditText-->
         <!--android:layout_width="0dp"-->
@@ -342,36 +342,38 @@
         <!--android:id="@+id/button2"-->
         <!--tools:layout_editor_absoluteY="231dp"-->
         <!--tools:layout_editor_absoluteX="51dp" />-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="3dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        android:layout_marginEnd="6dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="3dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/button"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="62dp"
+            app:layout_constraintLeft_toLeftOf="@+id/button" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_menu_search"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/button"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="62dp"
-        app:layout_constraintLeft_toLeftOf="@+id/button" />
 
 </android.support.constraint.ConstraintLayout>
+
 </android.support.v4.widget.NestedScrollView>
+
     </android.support.design.widget.CoordinatorLayout>
