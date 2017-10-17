@@ -19,6 +19,17 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String Table_Column_1_Name="name";
 
     public static final String Table_Column_2_PhoneNumber="phone_number";
+    public static final String Table_Column_3_Address="address";
+    public static final String Table_Column_4_ServiceType="service_type";
+    public static final String Table_Column_5_Service="service";
+    public static final String Table_Column_6_MonthlyCharge="monthly_charge";
+    public static final String Table_Column_7_Box="box";
+    public static final String Table_Column_8_Cost="cost";
+    public static final String Table_Column_9_StartDate="start_date";
+    public static final String Table_Column_10_MAC="MAC_address";
+    public static final String Table_Column_11_ExpiredDate="ExpiredDate";
+    public static final String Table_Column_12_ContractDays="Contract_Days";
+    public static final String Table_Column_13_Message="message";
 
     public SQLiteHelper(Context context) {
 
@@ -29,7 +40,10 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase database) {
 
-        String CREATE_TABLE="CREATE TABLE IF NOT EXISTS "+TABLE_NAME+" ("+Table_Column_ID+" INTEGER PRIMARY KEY, "+Table_Column_1_Name+" VARCHAR, "+Table_Column_2_PhoneNumber+" VARCHAR)";
+        String CREATE_TABLE="CREATE TABLE IF NOT EXISTS "+TABLE_NAME+" ("+Table_Column_ID+" INTEGER PRIMARY KEY, "+Table_Column_1_Name+" VARCHAR, "+Table_Column_2_PhoneNumber+" VARCHAR" +
+                ", "+Table_Column_3_Address+" VARCHAR" +
+                ")"
+                ;
         database.execSQL(CREATE_TABLE);
 
     }

@@ -104,15 +104,31 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextNewAddress3"
             tools:layout_constraintLeft_creator="1"
             app:layout_constraintLeft_toLeftOf="@+id/editTextNewAddress3" />
-        <EditText
-            android:hint="Rent/Buy"
-            android:textSize="20dp"
+        <!--<EditText-->
+            <!--android:hint="Rent/Buy"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editTextNewService5"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_below="@+id/editTextNewServiceType4"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--tools:layout_constraintTop_creator="1"-->
+            <!--tools:layout_constraintRight_creator="1"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/editTextNewServiceType4"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/editTextNewServiceType4"-->
+            <!--tools:layout_constraintLeft_creator="1"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/editTextNewServiceType4" />-->
+        <RadioGroup
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/radioGroupNewService5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewService5"
-            android:gravity="center"
+
             android:layout_below="@+id/editTextNewServiceType4"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
@@ -120,7 +136,20 @@
             app:layout_constraintRight_toRightOf="@+id/editTextNewServiceType4"
             app:layout_constraintTop_toBottomOf="@+id/editTextNewServiceType4"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewServiceType4" />
+            app:layout_constraintLeft_toLeftOf="@+id/editTextNewServiceType4">
+        <RadioButton
+            android:id="@+id/radioButtonRent"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent"/>
+        <RadioButton
+            android:textSize="20dp"
+            android:id="@+id/radioButtonBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy"/>
+</RadioGroup>
         <EditText
             android:hint=" Monthly Charge"
             android:textSize="20dp"
@@ -130,14 +159,14 @@
             android:ems="10"
             android:id="@+id/editTextNewMonthlyCharge6"
             android:gravity="center"
-            android:layout_below="@+id/editTextNewService5"
+            android:layout_below="@+id/radioGroupNewService5"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editTextNewService5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNewService5"
+            app:layout_constraintRight_toRightOf="@+id/radioGroupNewService5"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupNewService5"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editTextNewService5" />
+            app:layout_constraintLeft_toLeftOf="@+id/radioGroupNewService5" />
         <EditText
             android:hint=" Box"
             android:textSize="20dp"
