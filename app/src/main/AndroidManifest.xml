@@ -18,7 +18,12 @@
         </activity>
         <activity android:name=".DisplaySQLiteDataActivity" />
         <activity android:name=".EditSingleRecordActivity" />
-        <activity android:name=".ShowSingleRecordActivity"></activity>
+        <activity android:name=".ShowSingleRecordActivity" />
+        <activity android:name=".SearchActivity1" />
+        <activity android:name=".TabSearch1" />
+        <activity android:name=".TabSearch2" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".MessageActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,10 +11,13 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+        xmlns:fab="http://schemas.android.com/apk/res/com.github.cla‌​ns"
+
+        android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -28,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView"
+        android:id="@+id/textViewEdit"
         android:gravity="center"
         android:textSize="20dp"
         android:textColor="#000000"
@@ -46,7 +50,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:id="@+id/editText1_NewName"
+            android:id="@+id/editText1_EditName"
             tools:layout_constraintBottom_creator="1"
             android:layout_marginStart="5dp"
             tools:layout_constraintLeft_creator="1"
@@ -62,14 +66,14 @@
             android:ems="10"
             android:id="@+id/editText2_NewPhone"
             android:gravity="center"
-            android:layout_below="@+id/editText1_NewName"
+            android:layout_below="@+id/editText1_EditName"
             android:layout_alignParentStart="true"
             tools:layout_constraintTop_creator="1"
             tools:layout_constraintRight_creator="1"
-            app:layout_constraintRight_toRightOf="@+id/editText1_NewName"
-            app:layout_constraintTop_toBottomOf="@+id/editText1_NewName"
+            app:layout_constraintRight_toRightOf="@+id/editText1_EditName"
+            app:layout_constraintTop_toBottomOf="@+id/editText1_EditName"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editText1_NewName" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText1_EditName" />
         <EditText
             android:hint=" Address"
             android:textSize="20dp"
@@ -217,7 +221,8 @@
             app:layout_constraintRight_toRightOf="@+id/editText8_NewCost"
             app:layout_constraintTop_toBottomOf="@+id/editText8_NewCost"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="@+id/editText8_NewCost" />
+            app:layout_constraintLeft_toLeftOf="@+id/editText8_NewCost"
+            android:focusable="false"/>
         <EditText
             android:hint=" MAC Address"
             android:textSize="20dp"
@@ -276,7 +281,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextNewMessage13"
+            android:id="@+id/editText13_NewtMessage"
             android:gravity="center"
             android:layout_below="@+id/editText12_NewContractDay"
             android:layout_alignParentStart="true"
@@ -342,12 +347,14 @@
         <!--android:id="@+id/button2"-->
         <!--tools:layout_editor_absoluteY="231dp"-->
         <!--tools:layout_editor_absoluteX="51dp" />-->
+
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
             app:fabSize="mini"
+            android:backgroundTint="@color/orange"
             app:srcCompat="@android:drawable/ic_input_add"
             tools:layout_constraintRight_creator="1"
             tools:layout_constraintBottom_creator="1"
@@ -358,6 +365,7 @@
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/button2"
+            android:backgroundTint="@color/orange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"

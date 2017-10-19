@@ -13,7 +13,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     static String DATABASE_NAME="Customer";
 
     public static final String TABLE_NAME="Customer";
-
+    public static final String TABLE2_NAME="PaymentInformation";
     public static final String Table_Column_ID="id";
 
     public static final String Table_Column_1_Name="name";
@@ -30,6 +30,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public static final String Table_Column_11_ExpiredDate="ExpiredDate";
     public static final String Table_Column_12_ContractDays="Contract_Days";
     public static final String Table_Column_13_Message="message";
+
+    public static final String Table2_Column_ID="id";
+    public static final String Table2_Column_Name="name";
+    public static final String Table2_Column_DurationStart="duration_start";
+    public static final String Table2_Column_DurationEnd="duration_end";
+    public static final String Table2_Column_Message="message";
 
     public SQLiteHelper(Context context) {
 

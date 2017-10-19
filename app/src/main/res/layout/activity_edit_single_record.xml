@@ -1,56 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_edit_single_record"
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".EditSingleRecordActivity">
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:hint="Input Name"
-        android:layout_marginTop="3dp"
-        android:id="@+id/EditTextName"/>
-    <Button
-        android:text="Update This Record"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonUpdate"
-        android:layout_marginBottom="3dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:gravity="center"
-        android:hint="Input Phone Number"
-        android:layout_below="@+id/EditTextName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="3dp" />
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editText4"
-        android:gravity="center"
-        android:hint="Input Phone Number"
-        android:layout_marginTop="3dp"
-        android:layout_below="@+id/editText3"
-        android:layout_alignParentStart="true" />
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.cuongducnguyenkp.dbdemo2.NewCustomerActivity">
 
-</RelativeLayout>
+        <TextView
+            android:text="Edit Customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textViewEdit"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:hint=" Name"
+            android:textSize="20dp"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/editText1_EditName"
+            tools:layout_constraintBottom_creator="1"
+            android:layout_marginStart="5dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:hint=" Phone Number"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2_EditPhone"
+            android:gravity="center"
+            android:layout_below="@+id/editText1_EditName"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText1_EditName"
+            app:layout_constraintTop_toBottomOf="@+id/editText1_EditName"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText1_EditName" />
+        <EditText
+            android:hint=" Address"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText3_EditAddress"
+            android:gravity="center"
+            android:layout_below="@+id/editText2_EditPhone"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText2_EditPhone"
+            app:layout_constraintTop_toBottomOf="@+id/editText2_EditPhone"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText2_EditPhone" />
+        <EditText
+            android:hint=" Service Type"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText4_EditServiceType"
+            android:gravity="center"
+            android:layout_below="@+id/editText3_EditAddress"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText3_EditAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editText3_EditAddress"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText3_EditAddress" />
+        <!--<EditText-->
+        <!--android:hint="Rent/Buy"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editTextNewService5"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_below="@+id/editTextNewServiceType4"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/editTextNewServiceType4"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editTextNewServiceType4"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/editTextNewServiceType4" />-->
+        <RadioGroup
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/radioGroupEditService5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:layout_below="@+id/editText4_EditServiceType"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText4_EditServiceType"
+            app:layout_constraintTop_toBottomOf="@+id/editText4_EditServiceType"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText4_EditServiceType">
+            <RadioButton
+                android:id="@+id/radioButtonEditRent"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent"/>
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/radioButtonEditBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"/>
+        </RadioGroup>
+        <EditText
+            android:hint=" Monthly Charge"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText6_EditMonthlyCharge"
+            android:gravity="center"
+            android:layout_below="@+id/radioGroupEditService5"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/radioGroupEditService5"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupEditService5"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/radioGroupEditService5" />
+        <EditText
+            android:hint=" Box"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText7_EditBox"
+            android:gravity="center"
+            android:layout_below="@+id/editText6_EditMonthlyCharge"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText6_EditMonthlyCharge"
+            app:layout_constraintTop_toBottomOf="@+id/editText6_EditMonthlyCharge"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText6_EditMonthlyCharge" />
+        <EditText
+            android:hint=" Cost"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText8_EditCost"
+            android:gravity="center"
+            android:layout_below="@+id/editText7_EditBox"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText7_EditBox"
+            app:layout_constraintTop_toBottomOf="@+id/editText7_EditBox"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText7_EditBox" />
+        <EditText
+            android:hint=" Start Date"
+            android:textSize="20dp"
+            android:id="@+id/editText9_EditStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_below="@+id/editText8_EditCost"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText8_EditCost"
+            app:layout_constraintTop_toBottomOf="@+id/editText8_EditCost"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText8_EditCost"
+            android:clickable="true"
+            android:editable="false"/>
+        <EditText
+            android:hint=" MAC Address"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText10_EditMACAddress"
+            android:gravity="center"
+            android:layout_below="@+id/editText9_EditStartDate"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText9_EditStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/editText9_EditStartDate"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText9_EditStartDate" />
+        <EditText
+            android:hint=" Expired Date"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText11_EditExpiredDate"
+            android:gravity="center"
+            android:layout_below="@+id/editText10_EditMACAddress"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText10_EditMACAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editText10_EditMACAddress"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText10_EditMACAddress" />
+        <EditText
+            android:hint=" Contract Day"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText12_EditContractDay"
+            android:gravity="center"
+            android:layout_below="@+id/editText11_EditExpiredDate"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText11_EditExpiredDate"
+            app:layout_constraintTop_toBottomOf="@+id/editText11_EditExpiredDate"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText11_EditExpiredDate" />
+        <EditText
+            android:hint=" Message"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText13_EditMessage"
+            android:gravity="center"
+            android:layout_below="@+id/editText12_EditContractDay"
+            android:layout_alignParentStart="true"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="@+id/editText12_EditContractDay"
+            app:layout_constraintTop_toBottomOf="@+id/editText12_EditContractDay"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="@+id/editText12_EditContractDay" />
+
+        <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="Enter Name"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editTextNew"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:gravity="center"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginTop="56dp"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<EditText-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="phone"-->
+        <!--android:hint="Enter Phone Number"-->
+        <!--android:gravity="center"-->
+        <!--android:ems="10"-->
+        <!--android:layout_below="@+id/editTextNew"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:id="@+id/editTextNew2"-->
+        <!--tools:layout_constraintTop_creator="1"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/editTextNew"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editTextNew"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/editTextNew" />-->
+
+        <!--<Button-->
+        <!--android:text="Create new customer"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/editTextNew2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:id="@+id/button"-->
+        <!--tools:layout_editor_absoluteY="168dp"-->
+        <!--tools:layout_editor_absoluteX="16dp" />-->
+
+        <!--<Button-->
+        <!--android:text="Display All Customer information"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/button"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:id="@+id/button2"-->
+        <!--tools:layout_editor_absoluteY="231dp"-->
+        <!--tools:layout_editor_absoluteX="51dp" />-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_menu_save"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="@color/orange"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="3dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/activity_edit_single_record"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--android:paddingTop="@dimen/activity_vertical_margin"-->
+<!--tools:context=".EditSingleRecordActivity">-->
+<!--<EditText-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:ems="10"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="Input Name"-->
+    <!--android:layout_marginTop="3dp"-->
+    <!--android:id="@+id/EditTextName"/>-->
+<!--<Button-->
+    <!--android:text="Update This Record"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/buttonUpdate"-->
+    <!--android:layout_marginBottom="3dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+<!--<EditText-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:ems="10"-->
+    <!--android:id="@+id/editText3"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="Input Phone Number"-->
+    <!--android:layout_below="@+id/EditTextName"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_marginTop="3dp" />-->
+<!--<EditText-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:ems="10"-->
+    <!--android:id="@+id/editText4"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="Input Phone Number"-->
+    <!--android:layout_marginTop="3dp"-->
+    <!--android:layout_below="@+id/editText3"-->
+    <!--android:layout_alignParentStart="true" />-->
+
+<!--</RelativeLayout>-->
